@@ -33,13 +33,18 @@ This method causes the dragon to breathe a swath of fire in the target area. The
 
 * For each unit in the units array, print {} is hit by the fire if the unit is within the blast, where {} is the name of the unit.
 
-__Let's use the Dragon class to have ourselves a little dragon fight. Complete the bottom half of the main() function.__
+
+__Part 2__
+<mark> Let's use the Dragon class to have ourselves a little dragon fight. Complete the bottom half of the main() function.
+</mark> 
 
 * First, describe() all dragons
 * Next, make each dragon attempt to breathe fire at all of the other dragons. The center of each blast should always be at (3,3).
 * Call describe() on all the dragons first, then have them breathe fire.
 
-<mark> ORDER MATTERS FOR YOUR SOLUTION </mark> 
+<mark> ORDER MATTERS FOR YOUR SOLUTION 
+</mark> 
+
 Make sure to do everything in ascending index order. For example, when Black Dragon breathes fire, it should breathe fire on the other dragons in this order:
 
 Green Dragon
