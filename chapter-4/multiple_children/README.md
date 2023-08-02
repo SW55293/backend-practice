@@ -39,7 +39,7 @@ __Let's use the Dragon class to have ourselves a little dragon fight. Complete t
 * Next, make each dragon attempt to breathe fire at all of the other dragons. The center of each blast should always be at (3,3).
 * Call describe() on all the dragons first, then have them breathe fire.
 
-==ORDER MATTERS FOR YOUR SOLUTION==
+<mark> ORDER MATTERS FOR YOUR SOLUTION </mark> 
 Make sure to do everything in ascending index order. For example, when Black Dragon breathes fire, it should breathe fire on the other dragons in this order:
 
 Green Dragon
