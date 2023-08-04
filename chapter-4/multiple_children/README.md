@@ -66,3 +66,49 @@ nums = [4, 3, 2, 1]
 del nums[1]
 # nums is [4, 2, 1]
 ```
+
+#### Extras
+
+##### Calculating Gas Cost
+
+__VEHICLE CLASS__
+
+* CONSTRUCTOR
+Accepts two parameters (in order) and sets them as instance variables:
+
+max_speed_kph
+kilometers_per_liter
+
+* GET_PRICE_FOR_TRIP()
+The formula for calculating the cost of gas for a trip is:
+
+distance / rate_of_consumption * price
+
+* GET_CARGO_CAP_METERS_CUBED()
+This method should be left empty. You can use the pass keyword. This will be overridden by child classes.
+
+__TRUCK CLASS__
+
+* CONSTRUCTOR
+Calls the parent constructor, then sets the additional truck-specific instance variables as member variables.
+
+* GET_PRICE_FOR_TRIP()
+Uses the parent method to calculate the cost of gas for a trip, but adds an additional cost to account for the load weight.
+
+The formula for calculating the cost of gas for a trip is:
+
+base_vehicle_cost + (load_weight_kilos * 0.01)
+
+* GET_CARGO_CAP_METERS_CUBED()
+Returns the cargo capacity of the truck in meters cubed. A truck's bed is 2 meters deep. Return the volume of the truck's bed by multiplying the area of the bed by its depth.
+
+__CAR CLASS__
+
+* CONSTRUCTOR
+Calls the parent constructor, then sets the additional car-specific instance variable as a member variable.
+
+* GET_PRICE_FOR_TRIP
+The car class does not need to override this method.
+
+* GET_CARGO_CAP_METERS_CUBED()
+Returns the cargo capacity of the car, which was set in the constructor. No fancy calculations needed here.
