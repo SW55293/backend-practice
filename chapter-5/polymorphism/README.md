@@ -9,3 +9,16 @@ A's left edge is left of B's right edge
 A's right edge is right of B's left edge
 A's top edge is above B's bottom edge
 A's bottom edge is below B's top edge
+
+### ----
+ASSIGNMENT
+First, complete the Dragon's constructor. The dragon needs one more private data member: __hit_box. The hitbox is a Rectangle object. You've been provided with the height, width, and center position (pos_x, pos_y) of the dragon.
+
+`
+center = pos_x = 2, pos_y = 1
+Height = 2
+Width = 4
+`
+
+IN_AREA() METHOD()
+Next, you'll need to override the in_area method. Create a new rectangle object with the given corner positions, and use the rectangle's overlaps method to check if the Dragon is inside it. This method should return a boolean value.
