@@ -22,6 +22,14 @@ def find_last_name(names_dict, first_name):
     #         return list(names_dict.keys()).index(x)
     # return None
     return names_dict.get(first_name)
+# find_last_name completed in less than 50.0 milliseconds!
+
+
+def find_last_name(names_dict, first_name):
+    try:
+        return names_dict[first_name]
+    except KeyError:
+        return None
 
 
 
