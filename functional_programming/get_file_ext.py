@@ -19,7 +19,12 @@ I used the built-in dictionaries .get method to implement this.
 '''
 
 def categorize_file(filename):
-    get_category = lambda x: x.get()
+
+    get_category = lambda extension: {
+        ".txt": "Text",
+        ".docx": "Document",
+        ".py": "Code" 
+        }.get(extension, "Unknown")
 
     return get_category(filename[filename.rfind(".") :])
 
