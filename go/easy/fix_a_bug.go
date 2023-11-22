@@ -21,4 +21,16 @@ func main() {
 	// don't touch below this line
 
 	fmt.Printf("Doris spent %.2f on text messages today\n", totalCost)
+
+	// Call the concat function
+	concat()
+}
+
+// Concatanate 2 strings
+func concat() {
+	var username string = "wagslane"
+	var password string = "20947382822"
+
+	// don't edit below this line
+	fmt.Println("Authorization: Basic", username+":"+password)
 }
