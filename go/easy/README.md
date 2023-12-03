@@ -59,3 +59,9 @@ float32 float64 // decimal numbers
 complex64 complex128 // imaginary numbers (rare)
 
 ```
+- Some types can be converted the following way:
+```go
+temperatureFloat := 88.26
+temperatureInt := int64(temperatureFloat)
+
+```
