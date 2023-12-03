@@ -43,3 +43,19 @@ float32 float64
 complex64 complex128
 
 ```
+
+> var empty string == empty := ""
+
+
+#### Types
+
+```go
+int  int8  int16  int32  int64 // whole numbers
+
+uint uint8 uint16 uint32 uint64 uintptr // positive whole numbers
+
+float32 float64 // decimal numbers
+
+complex64 complex128 // imaginary numbers (rare)
+
+```
