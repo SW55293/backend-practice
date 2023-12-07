@@ -37,3 +37,15 @@ def word_count_memo(document, memos):
 def word_count(document):
     count = len(document.split())
     return count
+
+
+'''
+IS IT ALWAYS GOOD TO MEMOIZE?
+Nope! Memoization is a tradeoff. It's a tradeoff between memory and speed. If you have a function that's called often, 
+but it's not very expensive to compute, then it's probably not worth memoizing because you'll be bloating the amount of 
+RAM your program uses storing the results of the function.
+
+It's also a decent amount of extra code to write, so you should only do it if you have a good reason to.
+
+
+'''
