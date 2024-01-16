@@ -10,6 +10,23 @@ We've created a class named Stack with some helpful functions that you can use t
 
 
 '''
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        if len(self.items) == 0:
+            return None
+        return self.items.pop()
+
+    def peek(self):
+        if len(self.items) == 0:
+            return None
+        return self.items[len(self.items) - 1]
+
 
 def is_balanced(input_str):
     stack = Stack()
